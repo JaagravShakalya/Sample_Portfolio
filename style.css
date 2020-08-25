@@ -294,7 +294,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    color: rgb(0, 0, 0);
+    color: rgb(41, 41, 41);
     transition: 0.5s ease-in-out;
     opacity: 1;
     transform: translateY(20px);
@@ -311,12 +311,36 @@ nav {
     font-weight: bold;
     height: 40vh;
 }
-@media only screen and (max-width: 706px){
+@media only screen and (max-width: 700px){
     #about{
         flex-direction: column-reverse;
-        height: 93vh;
+        height: auto;
         justify-content: space-evenly;
-        overflow: scroll;
+        overflow: hidden;
+    }
+    #about img{
+        height: 30vh;
+        width: 30vh;
+    }
+    #about .about-text{
+        width: 90%;
+        height: 80%;
+        justify-content: space-around;
+    }
+    .about-text h2{
+        padding: 1vh;
+        margin-bottom: 10vh;
+    }
+    .about-text p{
+        font-size:3vh;
+    }
+}
+@media only screen and (max-width: 400px){
+    #about{
+        flex-direction: column-reverse;
+        height: auto;
+        justify-content: space-evenly;
+        overflow: hidden;
     }
     #about .about-text{
         width: 90%;
@@ -609,6 +633,7 @@ nav {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.5vh;
     text-transform: uppercase;
+    color: rgb(31, 31, 31);
 }
 .contact-info{
     height: 30vh;
@@ -645,7 +670,7 @@ nav {
 }
 .card p{
     font-size: 2.9vh;
-    color: white;
+    color: rgb(233, 233, 233);
     transform: translateY(20px);
     opacity: 0;
     transition: 0.2s all ease-in;
@@ -688,7 +713,7 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    color: white;
+    color: rgb(145, 145, 145);
 }
 #footer iframe{
     height: 55vh;
