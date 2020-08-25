@@ -260,13 +260,16 @@ nav {
     #head{
         display: flex;
         flex-direction: column;
-        height: 110vh;
+        height: 93vh;
         padding: 2vh;
     }
     #head h1{
         width: 90%;
         font-size: 7vh;
         text-align: center;
+    }
+    #head img{
+        height: 50vh;
     }
 }
 
@@ -311,22 +314,26 @@ nav {
 @media only screen and (max-width: 706px){
     #about{
         flex-direction: column-reverse;
-        height: 160vh;
-        justify-content: center;
+        height: 93vh;
+        justify-content: space-evenly;
+        overflow: scroll;
     }
     #about .about-text{
-        width: 80%;
+        width: 90%;
         height: 80%;
-        font-size: 2vh;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
     #about img{
         padding: 4vh;
-        height: 60vh;
-        width: 60vh;
+        height: 95vw;
+        width: 95vw;
     }
     .about-text h2{
         padding: 1vh;
+        margin-bottom: 10vh;
+    }
+    .about-text p{
+        font-size:2vh;
     }
 }
 
@@ -577,6 +584,7 @@ nav {
         flex-direction: column;
         height: 80vh;
         justify-content: space-evenly;
+        
     }
     .proj-content img{
         height: 50%;
@@ -660,6 +668,7 @@ nav {
     }
     #contact-container h2{
         font-size: 5vh;
+        text-align: center;
     }
     .contact-info{
         flex-direction: column;
